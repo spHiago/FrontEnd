@@ -1,0 +1,44 @@
+/* Estilos básicos e responsivos para o currículo */
+:root{
+  --max-width: 900px;
+  --accent:#0b5ed7;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+body{
+  font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  margin:0;
+  line-height:1.4;
+  color:#111;
+  background:#f7f9fc;
+}
+.container{
+  max-width:var(--max-width);
+  margin:24px auto;
+  background:#fff;
+  padding:20px;
+  box-shadow:0 6px 18px rgba(10,10,10,0.06);
+  border-radius:8px;
+}
+header{ text-align:center; }
+.profile{ width:160px; height:auto; border-radius:8px; display:block; margin:0 auto 12px; }
+h1{ margin:6px 0 4px; font-size:1.6rem; }
+.contato{ font-style:normal; color:var(--muted); }
+hr{ border:none; border-top:1px solid #e6e9ef; margin:18px 0; }
+main section{ margin-bottom:14px; }
+h2{ font-size:1.1rem; color:var(--accent); margin-bottom:8px; }
+.idiomas{ width:100%; border-collapse:collapse; }
+.idiomas th, .idiomas td{ padding:8px 10px; border:1px solid #e6e9ef; text-align:left; }
+caption{ caption-side:top; text-align:left; font-weight:600; margin-bottom:6px; }
+footer{ text-align:center; color:var(--muted); font-size:0.9rem; margin-top:10px; }
+
+@media (min-width:720px){
+  header{ display:flex; align-items:center; gap:20px; text-align:left; }
+  .profile{ width:140px; margin:0; }
+  .contato{ margin-left:6px; }
+}
+
+@media (max-width:420px){
+  .container{ margin:12px; padding:16px; }
+  h1{ font-size:1.3rem }
+}
