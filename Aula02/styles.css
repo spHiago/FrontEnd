@@ -1,0 +1,188 @@
+:root {
+  --bg: #f3f7ff;
+  --card: #ffffff;
+  --card-alt: #f8faff;
+  --text: #1d2733;
+  --muted: #5f6f82;
+  --accent: #0d6efd;
+  --accent-soft: #eaf2ff;
+  --border: #dde6f3;
+  --shadow: 0 16px 40px rgba(17, 24, 39, 0.08);
+  --radius: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: linear-gradient(180deg, #eef4ff 0%, #f8fafc 100%);
+}
+
+.container {
+  max-width: 920px;
+  margin: 40px auto;
+  padding: 28px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 3px solid var(--accent-soft);
+  box-shadow: 0 10px 20px rgba(13, 110, 253, 0.12);
+}
+
+.intro {
+  flex: 1;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.cargo {
+  margin: 6px 0 12px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.contato {
+  margin: 0;
+  font-style: normal;
+  color: var(--muted);
+  display: grid;
+  gap: 2px;
+}
+
+.contato p {
+  margin: 0;
+}
+
+.contato a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.contato a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding-top: 10px;
+}
+
+.card {
+  margin-top: 18px;
+  padding: 18px 20px;
+  background: var(--card-alt);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+h2 {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 1.15rem;
+}
+
+p {
+  margin: 0;
+}
+
+.lista {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.lista li + li {
+  margin-top: 8px;
+}
+
+.idiomas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.idiomas th,
+.idiomas td {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.idiomas th {
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+#rodape {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 700px) {
+  .container {
+    margin: 20px 12px;
+    padding: 18px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile {
+    width: 130px;
+    height: 130px;
+  }
+
+  .contato {
+    justify-items: center;
+  }
+}
