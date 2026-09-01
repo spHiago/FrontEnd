@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -33,23 +33,46 @@
       <section class="form-card" id="cadastro">
         <h2>Cadastre o seu currículo</h2>
 
-        <form action="#" method="get">
+        <form action="https://postman-echo.com/post" method="post" enctype="multipart/form-data"> 
           <fieldset>
             <legend>Dados pessoais</legend>
 
+            <div>
+              <label for="foto_id"> Foto: </label>
+              <input id="foto_id" name="foto" type="file" accept="image/*">
+            </div>
+
             <div class="form-group">
               <label for="nome_id">Nome Completo:</label>
-              <input type="text" id="nome_id" name="nome" placeholder="Seu nome completo" required />
+              <input
+                type="text"
+                id="nome_id"
+                name="nome"
+                placeholder="Seu nome completo"
+                required
+              />
             </div>
 
             <div class="form-group">
               <label for="telefone_id">Telefone:</label>
-              <input type="tel" id="telefone_id" name="telefone" placeholder="(43) 99999-9999" required />
+              <input
+                type="tel"
+                id="telefone_id"
+                name="telefone"
+                placeholder="(43) 99999-9999"
+                required
+              />
             </div>
 
             <div class="form-group">
               <label for="email_id">Email:</label>
-              <input type="email" id="email_id" name="email" placeholder="seuemail@exemplo.com" required />
+              <input
+                type="email"
+                id="email_id"
+                name="email"
+                placeholder="seuemail@exemplo.com"
+                required
+              />
             </div>
 
             <div class="form-group">
@@ -63,22 +86,46 @@
 
             <div class="form-group">
               <label for="logradouro_id">Logradouro:</label>
-              <input type="text" id="logradouro_id" name="logradouro" placeholder="Rua da Saudade, 58. Conj. Além" required />
+              <input
+                type="text"
+                id="logradouro_id"
+                name="logradouro"
+                placeholder="Rua da Saudade, 58. Conj. Além"
+                required
+              />
             </div>
 
             <div class="form-group">
               <label for="cidade_id">Cidade-UF:</label>
-              <input type="text" id="cidade_id" name="cidade" placeholder="Cidade-UF" required />
+              <input
+                type="text"
+                id="cidade_id"
+                name="cidade"
+                placeholder="Cidade-UF"
+                required
+              />
             </div>
 
             <div class="form-group">
               <label for="numero_id">Número:</label>
-              <input type="text" id="numero_id" name="numero" placeholder="Número" required />
+              <input
+                type="text"
+                id="numero_id"
+                name="numero"
+                placeholder="Número"
+                required
+              />
             </div>
 
             <div class="form-group">
               <label for="resumo_id">Fale sobre você:</label>
-              <textarea id="resumo_id" name="resumo" rows="10" placeholder="Fale sobre você" required></textarea>
+              <textarea
+                id="resumo_id"
+                name="resumo"
+                rows="10"
+                placeholder="Fale sobre você"
+                required
+              ></textarea>
             </div>
           </fieldset>
 
@@ -100,36 +147,42 @@
           <fieldset>
             <legend>Tecnologias</legend>
             <div>
-                <input id="tec_html_id"
-                       name="tecnologias"  
-                       type="checkbox"
-                       value="html"/>
-                <label for="tec_html_id">HTML</label>
+              <input
+                id="tec_html_id"
+                name="tecnologias"
+                type="checkbox"
+                value="html"
+              />
+              <label for="tec_html_id">HTML</label>
             </div>
             <div>
-                <input id="tec_css_id"
-                       name="tecnologias"  
-                       type="checkbox"
-                       value="css"/>
-                <label for="tec_css_id">CSS</label>
+              <input
+                id="tec_css_id"
+                name="tecnologias"
+                type="checkbox"
+                value="css"
+              />
+              <label for="tec_css_id">CSS</label>
             </div>
             <div>
-                <input id="tec_js_id" 
-                       name="tecnologias"
-                       type="checkbox"
-                          value="js"/>
-                <label for="tec_js_id">JavaScript</label>  
+              <input
+                id="tec_js_id"
+                name="tecnologias"
+                type="checkbox"
+                value="js"
+              />
+              <label for="tec_js_id">JavaScript</label>
             </div>
           </fieldset>
           <fieldset>
             <legend>Grau de instrução</legend>
             <div>
-                <label for="escolaridade_id">Escolaridade:</label>
-                <select id="escolaridade_id" name="escolaridade">
-                    <option value="medio">Médio</option>
-                    <option value="graduação">Graduação</option>
-                    <option value="pos-graduaçao">Pós-graduação</option>
-                </select>
+              <label for="escolaridade_id">Escolaridade:</label>
+              <select id="escolaridade_id" name="escolaridade">
+                <option value="medio">Médio</option>
+                <option value="graduação">Graduação</option>
+                <option value="pos-graduaçao">Pós-graduação</option>
+              </select>
             </div>
           </fieldset>
 
