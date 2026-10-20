@@ -1,0 +1,108 @@
+:root {
+    --bg: #f3f7ff;
+    --panel: #ffffff;
+    --primary: #4f46e5;
+    --primary-strong: #3730a3;
+    --secondary: #14b8a6;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: #dbe3f0;
+    --shadow: rgba(79, 70, 229, 0.12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #eef4ff 0%, #f8fafc 100%);
+    color: var(--text);
+    padding: 2rem 1rem 3rem;
+}
+
+.topbar {
+    max-width: 1100px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--primary-strong);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 12px 28px var(--shadow);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-strong);
+    font-size: 1.5rem;
+}
+
+p {
+    margin-top: 0.9rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.08), rgba(20, 184, 166, 0.08));
+    border: 1px solid rgba(79, 70, 229, 0.12);
+    border-radius: 0.85rem;
+    padding: 1rem;
+}
+
+.item {
+    flex: 1 1 140px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.8rem 0.9rem;
+    border-radius: 0.75rem;
+    background: linear-gradient(135deg, var(--primary), #6366f1);
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(79, 70, 229, 0.28);
+}
+
+.item:nth-child(2n) {
+    background: linear-gradient(135deg, var(--secondary), #0ea5e9);
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
