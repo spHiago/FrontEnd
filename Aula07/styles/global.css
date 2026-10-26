@@ -23,13 +23,9 @@ footer{
     margin-top: 3rem;
 }
 
-p{
+footer p{
     margin-top: 1rem;
     padding: 1.5rem;
-}
-
-span{
-    display: block;
 }
 
 label{
