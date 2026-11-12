@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <script src="scripts/index.js" defer></script>
   <title>Formulário JS</title>
 </head>
+
 <body>
   <header>
     <h1>Formulário super simples</h1>
@@ -31,6 +33,30 @@
       <input type="email" id="email">
       <p id="erro-email" class="oculto"></p>
 
+      <label for="sexo">Sexo</label>
+      <select id="sexo">
+        <option value="">Selecione</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="transformers">Transformers Optimus Prime</option>
+      </select>
+      <p id="erro-sexo" class="oculto"></p>
+
+      <label for="nacionalidade">Nacionalidade</label>
+      <input type="text" id="nacionalidade">
+      <p id="erro-nacionalidade" class="oculto"></p>
+
+      <label for="estado-civil">Estado Civil</label>
+      <select id="estado-civil">
+        <option value="">Selecione</option>
+        <option value="solteiro">Solteiro</option>
+        <option value="casado">Casado</option>
+        <option value="viuvo">Viuvo</option>
+        <option value="triste">Triste</option>
+        <option value="passando-fome">Passando Fome</option>
+      </select>
+      <p id="erro-estado-civil" class="oculto"></p>
+
       <label>
         <input type="checkbox" id="termos">
         Li e aceito os termos
@@ -46,4 +72,5 @@
     <p>Projeto para conhecermos o JavaScript</p>
   </footer>
 </body>
+
 </html>
