@@ -89,6 +89,16 @@ function validarForm() {
   }
 
   // DESAFIO VALIDAR O EMAIL COM REGEX
+  const email = document.querySelector("#email").value;
+  const erroEmail = document.querySelector("#erro-email");
+
+  const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!regexEmail.test(email)) {
+    erroEmail.textContent = "Digite um email válido!";
+    erroEmail.classList.add("erro");
+    erroEmail.classList.remove("oculto");
+  }
 
   const termos = document.querySelector("#termos");
   const erroTermos = document.querySelector("#erro-termos");
