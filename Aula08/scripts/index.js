@@ -17,6 +17,9 @@ async function chamarApi() {
       .value.replace(/\D/g, "")
       .slice(0, 11),
     email: document.querySelector("#email").value,
+    sexo: document.querySelector("#sexo").value,
+    nacionalidade: document.querySelector("#nacionalidade").value,
+    estadoCivil: document.querySelector("#estado-civil").value,
   };
 
   try {
@@ -56,6 +59,33 @@ function validarForm() {
     erroIdade.textContent = "É necessário ter 18 anos!";
     erroIdade.classList.add("erro");
     erroIdade.classList.remove("oculto");
+  }
+
+  const sexo = document.querySelector("#sexo").value;
+  const erroSexo = document.querySelector("#erro-sexo");
+
+  if (sexo === "") {
+    erroSexo.textContent = "Selecione uma opção!";
+    erroSexo.classList.add("erro");
+    erroSexo.classList.remove("oculto");
+  }
+
+  const nacionalidade = document.querySelector("#nacionalidade").value;
+  const erroNacionalidade = document.querySelector("#erro-nacionalidade");
+
+  if (nacionalidade === "") {
+    erroNacionalidade.textContent = "Informe sua nacionalidade!";
+    erroNacionalidade.classList.add("erro");
+    erroNacionalidade.classList.remove("oculto");
+  }
+
+  const estadoCivil = document.querySelector("#estado-civil").value;
+  const erroEstadoCivil = document.querySelector("#erro-estado-civil");
+
+  if (estadoCivil === "") {
+    erroEstadoCivil.textContent = "Selecione seu estado civil!";
+    erroEstadoCivil.classList.add("erro");
+    erroEstadoCivil.classList.remove("oculto");
   }
 
   // DESAFIO VALIDAR O EMAIL COM REGEX
